@@ -1,6 +1,9 @@
 ﻿
 @{
     ViewData["Title"] = "Index from index";
+   // Layout = "~/Views/Shared/_Layout.cshtml";
+
+
 }
 
 <h1>Index</h1> 
@@ -53,3 +56,36 @@
         
     } 
 }
+
+
+@ViewBag.data5
+
+
+@ViewData["data1"]
+<br/>
+
+@ViewData["data2"]
+
+<br/>
+
+@ViewData["data3"]
+
+@{
+    foreach(var item in (string[])ViewData["data4"])
+    {
+        <h2>@item</h2>
+    }
+}
+
+
+@ViewBag.data5
+
+@{
+    foreach (var item in ViewBag.data6)
+    {
+        <h1>@item</h1>
+    }
+}
+
+
+
